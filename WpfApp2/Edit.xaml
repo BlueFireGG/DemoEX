@@ -1,0 +1,55 @@
+﻿<Window x:Class="WpfApp2.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Edit" Height="900" Width="1600">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition Height="200"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Column="1" VerticalAlignment="Bottom">
+            <Label HorizontalAlignment="Center" FontSize="10">Артикул</Label>
+            <ComboBox ItemsSource="{Binding Articles}" SelectedItem="{Binding product.ProductArticleNumber }" Margin="4 2" Height="18" IsEnabled="False"></ComboBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Наименование</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductName}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Описание</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductDescription}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Категория</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductCategory}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Производитель</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductManufacturer}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Цена</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductCost}"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Column="2" VerticalAlignment="Bottom">
+            <Label HorizontalAlignment="Center" FontSize="10">Скидка</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductDiscountAmount}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Количество на складе</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductQuantityInStock}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Максимальная скидка</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductDiscountMax}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Поставщик</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductProvider}"></TextBox>
+            <Label HorizontalAlignment="Center" FontSize="10">Единицы измерения</Label>
+            <TextBox Margin="4 2" Text="{Binding product.ProductUnit}"></TextBox>
+        </StackPanel >
+        <StackPanel Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Left">
+            <Label HorizontalAlignment="Center" FontSize="10">Фото</Label>
+            <Image Name="Photo" Source="{Binding product.ProductPhoto}" Width="260"></Image>
+            <Button Width="100" Height="20" Click="Button_Click">Выбрать фото</Button>
+        </StackPanel>
+        <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Width="200" Height="40" Click="Button_Click_1">Сохранить</Button>
+    </Grid>
+</Window>
