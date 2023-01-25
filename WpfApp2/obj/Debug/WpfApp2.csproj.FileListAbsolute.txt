@@ -58,3 +58,5 @@ C:\Users\student\Desktop\WpfApp2\WpfApp2\obj\Debug\WpfApp2.exe
 C:\Users\student\Desktop\WpfApp2\WpfApp2\obj\Debug\WpfApp2.pdb
 C:\Users\student\source\repos\WpfApp2\WpfApp2\obj\Debug\Edit.g.cs
 C:\Users\student\source\repos\WpfApp2\WpfApp2\obj\Debug\Edit.baml
+C:\Users\student\source\repos\WpfApp2\WpfApp2\obj\Debug\Add.g.cs
+C:\Users\student\source\repos\WpfApp2\WpfApp2\obj\Debug\Add.baml

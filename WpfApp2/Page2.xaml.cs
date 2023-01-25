@@ -49,8 +49,8 @@ namespace WpfApp2
         }
         private void BtnAddProduct_Click(object sender, RoutedEventArgs e)
         {
-            //Edit q = new Edit();
-            //q.Show();
+            Add q = new Add(Page1.connection);
+            q.Show();
         }
 
         private void Sortirovka_SelectionChanged(object sender, SelectionChangedEventArgs e)

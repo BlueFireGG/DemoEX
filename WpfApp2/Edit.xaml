@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
-        Title="Edit" Height="900" Width="1600">
+        Title="Edit" Height="700" Width="1200">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
@@ -48,7 +48,7 @@
         <StackPanel Grid.Column="3" VerticalAlignment="Bottom" HorizontalAlignment="Left">
             <Label HorizontalAlignment="Center" FontSize="10">Фото</Label>
             <Image Name="Photo" Source="{Binding product.ProductPhoto}" Width="260"></Image>
-            <Button Width="100" Height="20" Click="Button_Click">Выбрать фотоo</Button>
+            <Button Width="100" Height="20" Click="Button_Click">Выбрать фото</Button>
         </StackPanel>
         <Button Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Width="200" Height="40" Click="Button_Click_1">Сохранить</Button>
     </Grid>
